@@ -45,9 +45,6 @@
         ],
         "compile": [
             "@php artisan optimize"
-        ],
-        "post-install-cmd": [
-            "chmod -R 777 public/"
         ]
 
     },    "extra": {
