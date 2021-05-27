@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BootleQuestionController;
 use App\Http\Controllers\MillionerQuestionController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 Route::resource('millioner-questions', MillionerQuestionController::class)->only('index', 'store', 'update', 'destroy');
+Route::resource('bootle-questions', BootleQuestionController::class)->only('index', 'store', 'update', 'destroy');
